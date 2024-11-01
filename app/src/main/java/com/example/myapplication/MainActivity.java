@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         String savedUsername = sharedPreferences.getString("username", "###");
-        helloTxt.setText("hello " + savedUsername);
+        helloTxt.setText("hello "+ savedUsername);
 
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
