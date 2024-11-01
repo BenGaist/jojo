@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
         Button saveBtn = findViewById(R.id.save);
 
 
+        String savedUsername = sharedPreferences.getString("username", "###");
+        helloTxt.setText("hello " + savedUsername);
+
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
