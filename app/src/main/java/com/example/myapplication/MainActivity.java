@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putString("username", username);
                     editor.apply();
-                    helloTxt.setText("hello"+sharedPreferences.getString("username","###"));
+                    helloTxt.setText("hello "+sharedPreferences.getString("username","###"));
 
 
             }
